@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset = "utf-8">
+    <meta name ="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7"/>
+    <base href="images/">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link href="../tictactoeneu.css" type="text/css" rel="stylesheet"/> <!-- stylesheet öffnen mit den fonts-->
+
+<title>Tic Tac Toe</title>
+</head>
+<body>
+
+
+    <div class="viereckHintergrund">
+      <h1 class="ticTacToeUeberschrift"><span class="letterSpacingPoint">.</span><span>T</span>ic <span>T</span>ac <span>T</span>oe<span>.</span></h1>
+
+<div class="werIstDran">Spieler .. ist dran</div>
+<div class="button" id="generate"onclick="generateSpielfeld() ;this.onclick=null ">Spielfeld Generieren</div> <!-- durch:    this.onclick=null;    lässt sich der BUtton nur ein mak drücken-->
+
+ 
+<div class="button">Reset</div>
+
+<div id="spielfeld" class="spielfeld">
+<div class="gitter" id="1" onclick="fieldClicked(1)"></div>
+<div class="gitter" id="2" onclick="fieldClicked(2)"></div>
+<div class="gitter" id="3" onclick="fieldClicked(3)"></div>
+<div class="gitter" id="4" onclick="fieldClicked(4)"></div>
+<div class="gitter" id="5" onclick="fieldClicked(5)"></div>
+<div class="gitter" id="6" onclick="fieldClicked(6)"></div>
+<div class="gitter" id="7" onclick="fieldClicked(7)"></div>
+<div class="gitter" id="8" onclick="fieldClicked(8)"></div>
+<div class="gitter" id="9" onclick="fieldClicked(9)"></div>
+</div>
+
+
+<div id="demo"></div>
+
+<div>
+<p>
+ Spieler 1 <input disabled id="ergebnisEins" type="number" value="0"></p>
+ Spieler 2 <input disabled id="ergebnisZwei" type="number"  value="0">
+</div>
+<br>
+
+Spielfeldgröße<input id="input" type="number" style="margin-right: 10px;" value="3" min="3" max="10">
+
+
+
+<!-- Wie Spielfeld noch so dynamisch umgestalten dass wenn ich mein Spielfeld vergrößer, das an dem selben Punkt bleibt!! und beides auf einer Ebene ist-->
+
+</div>
+<script src="../tictactoescript.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
